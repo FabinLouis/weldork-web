@@ -6,6 +6,16 @@
   <artifactId>Weldork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  
+  <profiles>
+  <profile>
+    <id>production</id>
+    <properties>
+      <skipTests>true</skipTests>
+    </properties>
+  </profile>
+</profiles>
+
 
   <properties>
     <java.version>1.8</java.version>
